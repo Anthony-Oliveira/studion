@@ -1,9 +1,9 @@
 .btn {
   cursor: pointer;
-  padding: 1rem 2rem;
-  color: var(--color-primary);
+  padding: 1rem 2.5rem;
   border: 0.125rem solid #fff;
   border-radius: 5rem;
+  color: var(--color-primary);
   background: unset;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -21,6 +21,20 @@
   color: #fff;
 }
 
+.btn--institutional,
+.btn--quote {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .btn--institutional,
+  .btn--quote {
+    display: unset;
+    margin: unset;
+  }
+}
+
 .btn--institutional:hover,
 .btn--contact:hover {
   color: var(--color-copy);
@@ -36,4 +50,10 @@
   color: #fff;
   background: var(--color-primary);
   box-shadow: 0 1rem 1rem #0006;
+}
+
+.btn--quote {
+  color: var(--color-copy);
+  border-color: var(--color-copy);
+  background: unset;
 }
